@@ -1,0 +1,14 @@
+version: '3' 
+services: 
+  next_starter:
+    container_name: 'next-starter'
+    restart: unless-stopped
+    image: node:lts
+    command: npm run dev
+    ports: 
+      - '3000:3000'
+    volumes:
+      - .:/srv/next_starter:rw
+    working_dir: /srv/next_starter
+    env_file:
+      - .env
