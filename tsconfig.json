@@ -17,7 +17,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": "./src",
-    "module": "esnext"
+    "module": "esnext",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@utils/*": ["utils/*"],
+    }
   },
   "exclude": [
     "node_modules",

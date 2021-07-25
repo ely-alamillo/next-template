@@ -1,4 +1,4 @@
-import { testFn } from './utils'
+import { testFn } from '@utils/some-util'
 
 describe('testFn', () => {
   it('should pass', () => {
