@@ -16,12 +16,6 @@
     "generate-barrels": "barrelsby --delete",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test",
-      "pre-push": "npm run type-check"
-    }
-  },
   "lint-staged": {
     "*.@(ts|tsx)": [
       "npm lint",
