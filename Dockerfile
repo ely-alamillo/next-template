@@ -21,5 +21,4 @@ COPY --from=builder /next-starter-template/node_modules ./node_modules
 COPY --from=builder /next-starter-template/package.json ./package.json
 
 EXPOSE 3000
-# CMD ["npm", "start"]
 CMD ["npm", "start"]

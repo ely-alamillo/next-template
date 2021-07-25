@@ -8,7 +8,9 @@ services:
     ports: 
       - '3000:3000'
     volumes:
-      - .:/srv/next_starter:rw
-    working_dir: /srv/next_starter
+      # bind current directory to /service/next_starter read/write
+      # this allows hmr to happen
+      - .:/service/next_starter
+    working_dir: /service/next_starter
     env_file:
       - .env
