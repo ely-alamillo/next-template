@@ -13,7 +13,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test-all": "npm run lint && npm run type-check && npm run test",
-    "generate-barrels": "barrelsby --delete"
+    "generate-barrels": "barrelsby --delete",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -54,7 +55,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^4.2.3",
+    "husky": "^7.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "jest-watch-typeahead": "^0.6.1",
