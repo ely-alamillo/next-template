@@ -14,7 +14,7 @@ FROM node:lts as runner
 WORKDIR /next-starter-template
 ENV NODE_ENV production
 # If you are using a custom next.config.js file, uncomment this line.
-# COPY --from=builder /next-starter-template/next.config.js ./
+COPY --from=builder /next-starter-template/next.config.js ./
 COPY --from=builder /next-starter-template/public ./public
 COPY --from=builder /next-starter-template/.next ./.next
 COPY --from=builder /next-starter-template/node_modules ./node_modules
