@@ -6,4 +6,5 @@ module.exports = {
     // are omitting this to be ran by next
     ignoreDuringBuilds: true,
   },
+  swcMinify: true,
 }
